@@ -12,7 +12,7 @@ import time
 start = time.time()
 
 scope = ['https://spreadsheets.google.com/feeds','https://www.googleapis.com/auth/drive']
-creds = ServiceAccountCredentials.from_json_keyfile_name('/volumes/alpha/programming/apikeys/creds.json', scope)
+creds = ServiceAccountCredentials.from_json_keyfile_name('', scope)
 client = gspread.authorize(creds)
 
 sheet = client.open('RUFFL 2023 Season Sheet')
